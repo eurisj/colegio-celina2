@@ -1,0 +1,124 @@
+/* Estilo base del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(150deg, #1ce037, #104bee);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+.formulario {
+    width: 400px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos generales del formulario */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Caja de entrada */
+form .username {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.username input {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.username input:focus {
+    border-color: #1ce037;
+}
+
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #aaa;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.username input:focus ~ label,
+.username input:valid ~ label {
+    top: -10px;
+    font-size: 14px;
+    color: #1ce037;
+    background: #fff;
+    padding: 0 5px;
+}
+
+/* Enlace de recordar contraseña */
+.recordar {
+    margin-bottom: 20px;
+    color: #104bee;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: #1ce037;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #17b52e;
+}
+
+/* Sección de registro */
+.registrarse {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+.registrarse a {
+    color: #104bee;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
